@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Mhl-OL-R31">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Mhl-OL-R31">
                                 <rect key="frame" x="0.0" y="44" width="414" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ebq-B6-CRp">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ebq-B6-CRp">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -43,12 +43,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Mhl-OL-R31" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DAt-Gq-DuM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mhl-OL-R31" secondAttribute="bottom" constant="100" id="NQ1-i0-PTj"/>
-                            <constraint firstItem="oeL-VP-Yl3" firstAttribute="top" secondItem="Mhl-OL-R31" secondAttribute="bottom" constant="46" id="NU3-RH-7xA"/>
-                            <constraint firstItem="Mhl-OL-R31" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OIP-m8-MS1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mhl-OL-R31" secondAttribute="trailing" id="Qin-48-D5V"/>
-                            <constraint firstItem="oeL-VP-Yl3" firstAttribute="centerX" secondItem="Mhl-OL-R31" secondAttribute="centerX" id="nBR-aY-j8l"/>
+                            <constraint firstItem="Mhl-OL-R31" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8ep-Mr-7XE"/>
+                            <constraint firstItem="oeL-VP-Yl3" firstAttribute="centerX" secondItem="Mhl-OL-R31" secondAttribute="centerX" id="EXG-1i-PyR"/>
+                            <constraint firstItem="oeL-VP-Yl3" firstAttribute="top" secondItem="Mhl-OL-R31" secondAttribute="bottom" constant="46" id="HL6-CW-af9"/>
+                            <constraint firstItem="Mhl-OL-R31" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JMI-uI-61M"/>
+                            <constraint firstItem="Mhl-OL-R31" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lxs-Pe-OX9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mhl-OL-R31" secondAttribute="bottom" constant="100" id="qSL-SJ-ElM"/>
                         </constraints>
                     </view>
                     <connections>

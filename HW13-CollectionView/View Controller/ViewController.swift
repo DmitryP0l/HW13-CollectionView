@@ -40,12 +40,19 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
         dataSource.count
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let controller = GaleryViewController()
+        present(controller, animated: true, completion: nil)
+        controller.setupWith(photos: dataSource, selectedPhotoName: dataSource[indexPath.row])
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GalleryCollectionViewCell.identifier, for: indexPath) as! GalleryCollectionViewCell
         cell.setupWithPhoto(photoNameString: dataSource[indexPath.row])
         return cell
     }
+   
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 2
@@ -53,12 +60,6 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 2
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let controller = GaleryViewController()
-        present(controller, animated: true, completion: nil)
-        controller.setupWith(photos: dataSource, selectedPhotoName: dataSource[indexPath.row])
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -71,7 +72,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
         }
     }
     
-    
+   
     
     
 }
